@@ -2,10 +2,9 @@ import os
 
 os.chdir('chapter3')
 try:
-   data=open('data.txt')
+    data=open('data.txt')
 
-   for each_line in data:
-'''if each_line.find(':')!=-1:   '''
+    for each_line in data:
       try:
          (role,line_spoken)= each_line.split(':',1)
          print(role,end='')

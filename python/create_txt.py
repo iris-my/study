@@ -6,6 +6,7 @@ try:
     data=open('data.txt')
     for each_line in data:
         try:
+            #使用':'对字符串进行分割，前部分赋值给role，后部分赋值给line_spoken。'1'代表只对一行中第一个':'进行分割，
             (role,line_spoken)=each_line.split(':',1)
             line_spoken=line_spoken.strip()
             if role=='Man':

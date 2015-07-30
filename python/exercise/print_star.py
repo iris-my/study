@@ -3,7 +3,7 @@ while True:
     if numbers.isdigit():
         num=int(numbers)
         for i in range(num):
-            print(' '*i + '*'*(2*num-(2*i)-1) + ' '*i)
+            print(' '*i + '*'*num)
         break
     else:
         print("Your input is not a positive integer!")
